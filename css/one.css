@@ -1,0 +1,539 @@
+
+/* Start VaGlo */
+:root {
+  --main-color: #CC3F0C;
+  --secondary-color: #33673B;
+  --section-padding: 60px;
+  --section-background: #D8CBC7;
+  --30px: 30px;
+}
+/* End VarGlo */
+
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Start Components */
+.special-heading {
+  color: #33673B;
+  margin: 0;
+  font-size: 100px;
+  font-weight: bolder;
+  letter-spacing: -3px;
+  text-align: center;
+}
+
+.special-heading + p {
+  text-align: center;
+  font-size: 20px;
+  margin: -30px 0 0;
+  color: #CC3F0C;
+}
+/* End Components  */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* For the Special heading + P after it */
+@media (max-width: 767px) {
+  .special-heading {
+    font-size: 60px;
+  }
+
+  .special-heading + p {
+    margin-top: -20px;
+  }
+
+  .services .services-content .srv {
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+
+  .services .services-content .srv .text p {
+    text-align: justify;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+
+  .services .services-content .srv .text p {
+    text-align: justify;
+  }
+}
+
+/* End Global Rules */
+
+/* Start Header Subak */
+.header {
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  width: 12%;
+}
+
+/* POSISI SEJAJAR ICON SUBAK - SPAN */
+.header .links {
+  position: relative;
+}
+
+/* LEBAR ICON SPAN */
+.header .links .icon {
+  width: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* 3 GARIS SPAN NAVBAR */
+.header .links .icon span {
+  background-color: #1b2319;
+  margin-bottom: 5px;
+  height: 4px;
+}
+
+/* GARIS-GARIS SPAN NAVBAR */
+.header .links .icon span:first-child {
+  width: 100%;
+}
+
+.header .links .icon span:nth-child(2) {
+  width: 60%;
+  transition: 0.3s;
+}
+
+.header .links .icon span:last-child {
+  width: 100%;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+
+/* LATAR LIST BATANG NAVBAR */
+.header .container .links ul {
+  list-style: none;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  top: calc(100% + 15px);
+  display: none;
+  z-index: 1;
+}
+
+/* PANAH NAVBAR */
+.header .container .links ul::before {
+  content: "";
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent transparent var(--main-color) transparent;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+}
+
+/* TEKS DI BATANG NAVBAR */
+.header .container .links ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #000000;
+  transition: .3s;
+}
+
+/* SERONG TEKS DI BATANG NAVBAR */
+.header .container .links ul li a:hover {
+  padding-left: 25px;
+}
+
+/* GARIS TIPIS ANTAR BATANG NAVBAR */
+.header .container .links ul li:not(:last-child) a {
+  border-bottom: 1px solid #CC3F0C;
+}
+
+/* UNTUK MEMUNCULKAN LIST NAVBAR */
+.header .container .links:hover ul {
+  display: block;
+  z-index: 1;
+}
+/* End Header Subak */
+
+/* Start Main Title */
+.landing {
+  background-image: url(../images/yerussalem.jpg);
+  background-size: cover;
+  height: calc(100vh - 64px);
+  position: relative;
+}
+
+.landing .intro-text {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  text-align: center;
+  width: 600px;
+  max-width: 100%;
+  opacity: 6;
+}
+
+.landing .intro-text h1 {
+  margin: 0;
+  color: #19231A;
+  font-weight:bolder;
+  font-size: 60px;
+  opacity: 6;
+}
+
+.landing .intro-text h2 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-size: 30px;
+  line-height: 1.1;
+  color: #ffffff
+}
+/* End Main Title */
+
+/* Start Features What Is Palestine*/
+.features {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: #D8CBC7;
+}
+
+.features .container {
+  font-weight: bold;
+}
+
+.features .feat {
+  padding: 20px;
+}
+
+.features .feat h3 {
+  text-align: center;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #CC3F0C;
+}
+
+.features .feat p {
+  text-align:justify;
+  line-height: 1.6;
+  font-size: 17px;
+  color: #000000;
+}
+/* End Features What Is Palestine*/
+
+/* Start Services Palestine 1948*/
+.services {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.services h2 {
+  color: #33673B;
+}
+
+.services .services-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* spy nda jejer ke bawah */
+  grid-gap: var(--30px);
+  margin-top: 100px;
+}
+
+.services .services-content .srv {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.services .services-content .srv .text h3 {
+  margin: 0 0 20px;
+  color: #CC3F0C;
+  font-weight:bold;
+}
+
+.services .services-content .srv .text a {
+  color: #33673B;
+  font-size: 30px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+/*munculkan batang ijo */
+.services .services-content .image {
+  text-align: center;
+  position: relative;
+}
+
+/* batang ijo. z-index untuk join gambar */
+.services .services-content .image::before {
+  content: "";
+  background-color: #006904;
+  width: 100px;
+  height: calc(100% + 100px);
+  top: -50px;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* ukuran gambar nakba */
+.services .services-content .image img {
+  width: 260px;
+}
+/* End Services Palestine 1948*/
+
+/* Portofolio Palestine 2023 */
+.portfolio {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+
+.portfolio h2 {
+  color: #CC3F0C;
+}
+
+/* header sub header dgn 3 grid di bawah */
+.portfolio .portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: var(--30px);
+  margin-top: -30px;
+}
+
+.portfolio .portfolio-content .card {
+  background-color: #CC3F0C;
+}
+
+.portfolio .portfolio-content .card img {
+  max-width: 100%;
+}
+
+.portfolio .portfolio-content .card .info {
+  padding: 20px;
+}
+
+.portfolio .portfolio-content .card .info h3 {
+  margin: 0;
+}
+
+.portfolio .portfolio-content .card .info p {
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.portfolio-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+/* pemunculnya ini do not disturb */
+.card {
+  position: relative;
+}
+
+.note-box {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 15px;
+  background-color: #9e0000;
+  border: 0px solid #f7ff81;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .note-box {
+  opacity: 1;
+}
+/* End Portofolio Palestine 2023 */
+
+/* Start Section Video Bombing*/
+.video {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: white;
+}
+
+.video .text h3 {
+  color: #CC3F0C;
+  font-size: x-large;
+}
+
+.video .text p {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+}
+
+.text .link{
+  font-weight: bold;
+  font-size: large;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text .link {
+  font-weight: bold;
+  font-size: large;
+  color:#560e0e;
+}
+/* end Section Video Bombing */
+
+/* NEXT logo */
+.next {
+  width: 8%;
+  margin-left: 600px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+.next p {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #9e0000;
+}
+/* end next logo */
+
+/* Start About Fatimah Azzahra*/
+.about {
+  padding-top: var(--section-padding);
+  padding-bottom: calc(var(--section-padding) + 60px);
+  background-color: #D8CBC7;
+}
+
+/* space 2 konten pic w the text */
+.about .about-content {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about .about-content .image {
+  position: relative;
+  width: 240px;
+  height: 240px;
+}
+
+.about .about-content .image img {
+  max-width: 100%;
+}
+
+.about .about-content .text {
+  flex-basis: calc(100% - 500px);
+}
+/* this was made by ima for web design course */
+.about .about-content .text p:first-of-type {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+
+/* this one was the red line */
+.about .about-content .text hr {
+  width: 70%;
+  border-color: #CC3F0C;
+  display: inline-block;
+}
+
+/* this one was the last thankies line */
+.about .about-content .text p:last-of-type {
+  line-height: 2;
+  color: #777;
+}
+/* End About Fatimah Azzahra*/
+
+/* Start Contact Fatimah Azzahra*/
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: white;
+}
+
+.contact h2 {
+  color: #CC3F0C;
+}
+
+.contact .info {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+}
+
+.contact .info .label {
+  font-weight: 800;
+  font-size: 35px;
+  color: #33673B;
+  margin-bottom: 15px;
+  letter-spacing: -2px;
+}
+
+.contact .info .link {
+  font-weight: 800;
+  font-size: 25px;
+  color: #CC3F0C;
+  text-decoration: none;
+  display: block;
+}
+/* End Contact Fatimah Azzahra*/
+
+/* Start Footer Copyright Ima*/
+.footer {
+  background-color:#D8CBC7;
+  padding: var(--30px) 10px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer span {
+  color: #CC3F0C;
+}
+/* End Footer Copyright Ima*/
+
+
+

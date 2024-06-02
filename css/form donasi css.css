@@ -1,0 +1,48 @@
+body {
+    width: 100%;
+}
+
+h1 {
+    color:rgb(123, 1, 1);
+    padding-left: 10px;
+}
+
+.navbar .nav-item .nav-link {
+    color: white;
+}
+
+.d-flex .btn {
+    color: white;
+    font-weight:bold;
+}
+
+/* header */
+.container .image {
+    width:120%;
+    padding-left: 150px;
+}
+
+/* FORM DONASI */
+.title h2 {
+    color:#7b1c1c;
+    text-align: center;
+    font-family:'arial';
+    font-weight: bolder;
+}
+
+.button {
+    padding-left: 600px;
+}
+
+.footer {
+    background-color:#7b1c1c;
+    height:40%;
+    padding: var(--30px) 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .footer span {
+    color: #00841d;
+  }
